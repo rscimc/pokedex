@@ -22,6 +22,7 @@ function convertPokemonToLi(pokemon) {
     `
 }
 
+
 pokeApi.getPokemons().then((pokemons = []) => {
     const newHtml = pokemons.map(convertPokemonToLi).join('');
     pokemonList.innerHTML += newHtml;
